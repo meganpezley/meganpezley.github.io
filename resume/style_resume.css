@@ -121,6 +121,18 @@ div.resumeBachelors {
 		"SOFIRST"
 }
 
+div.IASourceLinkDate	{ grid-area: IASourceLinkDate; }
+div.IASourceLinkTitle	{ grid-area: IASourceLinkTitle; }
+div.IASourceLinkContent	{ grid-area: IASourceLinkContent; }
+
+div.IASourceLink {
+	grid-area: IASourceLink;
+	grid-template-areas:
+		"IASourceLinkTitle"
+		"IASourceLinkDate"
+		"IASourceLinkContent"
+}
+
 div.JD5Date		{ grid-area: JD5Date; }
 div.JD5Title 	{ grid-area: JD5Title; }
 div.JD5Content 	{ grid-area: JD5Content; }
@@ -308,6 +320,22 @@ div.LanguagesSkillsBullets3Col {
 		"LanguagesSkillsBullets3a LanguagesSkillsBullets3b LanguagesSkillsBullets3c"
 }
 
+div.ContentSkillsBullets2a { grid-area: ContentSkillsBullets2a; }
+div.ContentSkillsBullets2b { grid-area: ContentSkillsBullets2b; }
+div.ContentSkillsBullets3a { grid-area: ContentSkillsBullets3a; }
+div.ContentSkillsBullets3b { grid-area: ContentSkillsBullets3b; }
+div.ContentSkillsBullets3c { grid-area: ContentSkillsBullets3c; }
+
+div.ContentSkillsBullets2Col {
+	grid-template-areas: 
+		"ContentSkillsBullets2a ContentSkillsBullets2b"
+}
+
+div.ContentSkillsBullets3Col {
+	grid-template-areas: 
+		"ContentSkillsBullets3a ContentSkillsBullets3b ContentSkillsBullets3c"
+}
+
 div.BusinessSkillsBullets2a { grid-area: BusinessSkillsBullets2a; }
 div.BusinessSkillsBullets2b { grid-area: BusinessSkillsBullets2b; }
 
@@ -339,6 +367,13 @@ div.BusinessSkillsBullets2Col {
 			"bachelorsDate bachelorsTitle"
 			"bachelorsDate bachelorsContent"
 			"bachelorsDate SOFIRST"
+	}
+	
+	div.IASourceLink {
+		grid-area: IASourceLink;
+		grid-template-areas:
+			"IASourceLinkDate IASourceLinkTitle"
+			"IASourceLinkDate IASourceLinkContent"
 	}
 
 	div.JD5 {
@@ -407,7 +442,7 @@ div.BusinessSkillsBullets2Col {
 		display: none;
 	}
 	
-	div.SkillsBullets2Col, div.BusinessSkillsBullets2Col {
+	div.SkillsBullets2Col {
 		display: grid;
 	}
 
@@ -432,7 +467,7 @@ div.BusinessSkillsBullets2Col {
 		display: none;
 	}
 
-	div.SkillsBullets3Col, div.BusinessSkillsBullets2Col {
+	div.SkillsBullets3Col {
 		display: grid;
 	}
 }
