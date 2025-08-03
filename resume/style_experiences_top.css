@@ -41,6 +41,14 @@ h3.experienceExampleHeading {
 	color: #B84C65;
 }
 
+h4.experienceExampleSubheading {
+	font-size: 16pt;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-style: italic;
+	font-family: DMSansRegular;
+}
+
 p.experienceTopParagraph, p.experienceOtherParagraph {
 	font-size: 14pt;
 	margin-top: 0;
@@ -75,6 +83,96 @@ div.exampleExperiencesColumns {
 	grid-template-columns: 30% 70%;
 }
 
+/**Digital Marketing and Communication Examples - Home**/
+
+div.marketingExampleImageBackground {
+	background-color: #DEB3AD;
+}
+
+div.marketingExampleImage 	{ grid-area: marketingExampleImage; }
+div.marketingExampleTitle	{ grid-area: marketingExampleTitle; }
+div.marketingExampleText 	{ grid-area: marketingExampleText; }
+div.marketingExampleButton 	{ grid-area: marketingExampleButton; }
+
+div.marketingExample {
+	grid-area: marketingExample;
+	grid-template-areas: 
+		"marketingExampleImage marketingExampleTitle"
+		"marketingExampleText marketingExampleText"
+		"marketingExampleButton marketingExampleButton"
+}
+
+/**User Experience Examples - Home**/
+
+div.uxExampleImageBackground {
+	background-color: #C97A80;
+}
+
+div.uxExampleImage 	{ grid-area: uxExampleImage; }
+div.uxExampleTitle	{ grid-area: uxExampleTitle; }
+div.uxExampleText 	{ grid-area: uxExampleText; }
+div.uxExampleButton { grid-area: uxExampleButton; }
+
+div.uxExample {
+	grid-area: uxExample;
+	grid-template-areas: 
+		"uxExampleImage uxExampleTitle"
+		"uxExampleText uxExampleText"
+		"uxExampleButton uxExampleButton"
+}
+
+/**Research Examples - Home**/
+
+div.researchExampleImageBackground {
+	background-color: #E791A8;
+}
+
+div.researchExampleImage 	{ grid-area: researchExampleImage; }
+div.researchExampleTitle	{ grid-area: researchExampleTitle; }
+div.researchExampleText 	{ grid-area: researchExampleText; }
+div.researchExampleButton 	{ grid-area: researchExampleButton; }
+
+div.researchExample {
+	grid-area: researchExample;
+	grid-template-areas: 
+		"researchExampleImage researchExampleTitle"
+		"researchExampleText researchExampleText"
+		"researchExampleButton researchExampleButton"
+}
+
+/**Experience Page**/
+
+div.generalExperienceExamples {
+	display: grid;
+	align-items: normal;
+	grid-template-columns: 100%;
+	grid-template-areas:
+		"marketingExample"
+		"uxExample"
+		"researchExample"
+}
+
+div.marketingExampleTitle, div.uxExampleTitle, div.researchExampleTitle {
+	padding-left: 0;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+	
+div.marketingExampleButton, div.uxExampleButton, div.researchExampleButton {
+	padding-left: 0;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+div.marketingExampleImage, div.uxExampleImage, div.researchExampleImage {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+
+/**API Ownership Page - UX**/
+
 div.apiExampleImageBackground {
 	background-color: #663635;
 }
@@ -91,6 +189,8 @@ div.apiExample {
 		"apiExampleText apiExampleText"
 		"apiExampleButton apiExampleButton"
 }
+
+/**Robotics Club Website - UX, Marketing**/
 
 div.roboticsExampleImage {
 	grid-area: roboticsExampleImage;
@@ -112,6 +212,8 @@ div.roboticsExample {
 		"roboticsExampleButton roboticsExampleButton"
 }
 
+/**Aftermarket Planning Team SharePoint Site - UX**/
+
 div.aftermarketExampleImage {
 	grid-area: aftermarketExampleImage;
 	border-top-left-radius: 50px;
@@ -131,6 +233,8 @@ div.aftermarketExample {
 		"aftermarketExampleText aftermarketExampleText"
 		"aftermarketExampleButton aftermarketExampleButton"
 }
+
+/**Customer and Product Support Scorecard - UX, Marketing**/
 
 div.cpsExampleImage {
 	grid-area: cpsExampleImage;
@@ -153,6 +257,123 @@ div.cpsExample {
 		"cpsExampleButton cpsExampleButton"
 }
 
+/**Aftermarket Planning Team Video Series - Marketing**/
+
+div.aftermarketVideoExampleImage {
+	grid-area: aftermarketVideoExampleImage;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+
+}
+div.aftermarketVideoExampleImageBackgrounds {
+	background-color: #894954;
+}
+div.aftermarketVideoExampleTitle 	{ grid-area: aftermarketVideoExampleTitle; }
+div.aftermarketVideoExampleText		{ grid-area: aftermarketVideoExampleText; }
+div.aftermarketVideoExampleButton	{ grid-area: aftermarketVideoExampleButton; }
+
+div.aftermarketVideoExample {
+	grid-area: aftermarketVideoExample;
+	grid-template-areas: 
+		"aftermarketVideoExampleImage aftermarketVideoExampleTitle"
+		"aftermarketVideoExampleText aftermarketVideoExampleText"
+		"aftermarketVideoExampleButton aftermarketVideoExampleButton"
+}
+
+/**Dawn Food Training Videos and Modules - Marketing**/
+
+div.dawnExampleImage {
+	grid-area: dawnExampleImage;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+
+}
+div.dawnExampleImageBackgrounds {
+	background-color: #C48B94;
+}
+div.dawnExampleTitle 	{ grid-area: dawnExampleTitle; }
+div.dawnExampleText		{ grid-area: dawnExampleText; }
+div.dawnExampleButton	{ grid-area: dawnExampleButton; }
+
+div.dawnExample {
+	grid-area: dawnExample;
+	grid-template-areas: 
+		"dawnExampleImage dawnExampleTitle"
+		"dawnExampleText dawnExampleText"
+		"dawnExampleButton dawnExampleButton"
+}
+
+/**IASourceLink Checklist - Marketing**/
+
+div.checklistExampleImage {
+	grid-area: checklistExampleImage;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+
+}
+div.checklistExampleImageBackgrounds {
+	background-color: #F29C9F;
+}
+div.checklistExampleTitle 	{ grid-area: checklistExampleTitle; }
+div.checklistExampleText	{ grid-area: checklistExampleText; }
+div.checklistExampleButton	{ grid-area: checklistExampleButton; }
+
+div.checklistExample {
+	grid-area: checklistExample;
+	grid-template-areas: 
+		"checklistExampleImage checklistExampleTitle"
+		"checklistExampleText checklistExampleText"
+		"checklistExampleButton checklistExampleButton"
+}
+
+/**SOFIRST Social Media - Marketing**/
+
+div.sofirstExampleImage {
+	grid-area: sofirstExampleImage;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+
+}
+div.sofirstExampleImageBackgrounds {
+	background-color: #A05C68;
+}
+div.sofirstExampleTitle 	{ grid-area: sofirstExampleTitle; }
+div.sofirstExampleText		{ grid-area: sofirstExampleText; }
+div.sofirstExampleButton	{ grid-area: sofirstExampleButton; }
+
+div.sofirstExample {
+	grid-area: sofirstExample;
+	grid-template-areas: 
+		"sofirstExampleImage sofirstExampleTitle"
+		"sofirstExampleText sofirstExampleText"
+		"sofirstExampleButton sofirstExampleButton"
+}
+
+/**The Wisdom to Thrive Website - UX, Marketing**/
+
+div.wisdomThriveExampleImage {
+	grid-area: wisdomThriveExampleImage;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+
+}
+div.wisdomThriveExampleImageBackgrounds {
+	background-color: #9C6B72;
+}
+div.wisdomThriveExampleTitle 	{ grid-area: wisdomThriveExampleTitle; }
+div.wisdomThriveExampleText		{ grid-area: wisdomThriveExampleText; }
+div.wisdomThriveExampleButton	{ grid-area: wisdomThriveExampleButton; }
+
+div.wisdomThriveExample {
+	grid-area: wisdomThriveExample;
+	grid-template-areas: 
+		"wisdomThriveExampleImage wisdomThriveExampleTitle"
+		"wisdomThriveExampleText wisdomThriveExampleText"
+		"wisdomThriveExampleButton wisdomThriveExampleButton"
+}
+
+/**Craig's Class Rhetoric Research - Research**/
+
 div.textToImageExampleImage {
 	grid-area: textToImageExampleImage;
 	border-top-left-radius: 50px;
@@ -173,6 +394,8 @@ div.textToImageExample {
 		"textToImageExampleText textToImageExampleText"
 		"textToImageExampleButton textToImageExampleButton"
 }
+
+/**Qualitative Research Class Project - Research**/
 
 div.aiExampleImage {
 	grid-area: aiExampleImage;
@@ -195,8 +418,33 @@ div.aiExample {
 		"aiExampleButton aiExampleButton"
 }
 
+/**Thesis - Research**/
+
+div.thesisExampleImage {
+	grid-area: thesisExampleImage;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+
+}
+div.thesisExampleImageBackgrounds {
+	background-color: #F1D3D0;
+}
+div.thesisExampleTitle 	{ grid-area: thesisExampleTitle; }
+div.thesisExampleText	{ grid-area: thesisExampleText; }
+div.thesisExampleButton	{ grid-area: thesisExampleButton; }
+
+div.thesisExample {
+	grid-area: thesisExample;
+	grid-template-areas: 
+		"thesisExampleImage thesisExampleTitle"
+		"thesisExampleText thesisExampleText"
+		"thesisExampleButton thesisExampleButton"
+}
+
+/**Other Work Examples**/
+
 div.distekExampleImage { grid-area: distekExampleImage; }
-div.dawnExampleImage { grid-area: dawnExampleImage; }
+div.dawnHandoutExampleImage { grid-area: dawnHandoutExampleImage; }
 div.PRImage { grid-area: PRImage; }
 div.communicationImage { grid-area: communicationImage;}
 
@@ -204,7 +452,7 @@ img.distekExampleImage {
 	width: 70%;
 	padding-bottom: 0.3in;
 }
-img.dawnExampleImage {
+img.dawnHandoutExampleImage {
 	width: 50%;
 	padding-bottom: 0.3in;
 }
@@ -245,9 +493,46 @@ div.experienceOtherExampleImages {
 	grid-template-columns: 100%;
 	grid-template-areas: 
 		"distekExampleImage"
-		"dawnExampleImage"
+		"dawnHandoutExampleImage"
 		"PRImage"
 		"communicationImage"
+}
+
+/**Other Examples - Marketing, UX, and Research Buttons**/
+div.marketingExample { grid-area: marketingExample; }
+div.uxExample { grid-area: uxExample; }
+div.researchExample { grid-area: researchExample; }
+div.otherExamplesStatement { grid-area: otherExamplesStatement; }
+div.otherExperienceMarketingSubpage {
+	grid-area: otherExperienceMarketingSubpage;
+	display: grid;
+	align-items: normal;
+	grid-template-columns: 100%;
+	grid-template-areas: 
+		"otherExamplesStatement"
+		"UXExample"
+		"researchExample"
+}
+div.otherExperienceUXSubpage {
+	grid-area: otherExperienceUXSubpage;
+	display: grid;
+	align-items: normal;
+	grid-template-columns: 100%;
+	grid-template-areas: 
+		"otherExamplesStatement"
+		"marketingExample"
+		"researchExample"
+}
+
+div.otherExperienceResearchSubpage {
+	grid-area: otherExperienceResearchSubpage;
+	display: grid;
+	align-items: normal;
+	grid-template-columns: 100%;
+	grid-template-areas: 
+		"otherExamplesStatement"
+		"marketingExample"
+		"uxExample"
 }
 
 /**HOVER**/
@@ -270,6 +555,62 @@ p.experienceExampleButton:hover {
 		grid-template-columns: 30% 70%;
 	}
 	
+	/**Experience Page**/
+	div.generalExperienceExamples {
+		grid-template-columns: 33.3% 33.3% 33.3%;
+		grid-template-areas:
+			"marketingExample uxExample researchExample"
+	}
+	
+	div.generalExperienceColumn {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	
+	h3.generalExperienceHeading {
+		font-size: 18pt;
+	}
+	
+	div.marketingExampleButton, div.uxExampleButton, div.researchExampleButton {
+		margin-left: 5%;
+		margin-right: 5%;
+		padding-left: 0;
+	}
+
+	div.marketingExampleImage, div.uxExampleImage, div.researchExampleImage {
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+	
+	div.marketingExampleTitle, div.uxExampleTitle, div.researchExampleTitle {
+		padding-left: 0;
+	}
+	
+	/**Digital Marketing and Communication Examples - Home**/
+	div.marketingExample {
+		grid-template-areas: 
+			"marketingExampleImage marketingExampleTitle"
+			"marketingExampleImage marketingExampleText"
+			"marketingExampleImage marketingExampleButton"
+	}
+
+	/**User Experience Examples - Home**/
+	div.uxExample {
+		grid-template-areas: 
+			"uxExampleImage uxExampleTitle"
+			"uxExampleImage uxExampleText"
+			"uxExampleImage uxExampleButton"
+	}
+
+	/**Research Examples - Home**/
+	div.researchExample {
+		grid-template-areas: 
+			"researchExampleImage researchExampleTitle"
+			"researchExampleImage researchExampleText"
+			"researchExampleImage researchExampleButton"
+	}
+	
+	/**API Ownership Page - UX**/
 	div.apiExample {
 		grid-template-areas: 
 			"apiExampleImage apiExampleTitle"
@@ -277,6 +618,7 @@ p.experienceExampleButton:hover {
 			"apiExampleImage apiExampleButton"
 	}
 
+	/**Robotics Club Website - UX, Marketing**/
 	div.roboticsExample {
 		grid-template-areas: 
 			"roboticsExampleImage roboticsExampleTitle"
@@ -284,13 +626,15 @@ p.experienceExampleButton:hover {
 			"roboticsExampleImage roboticsExampleButton"
 	}
 
+	/**Aftermarket Planning Team SharePoint Site - UX**/
 	div.aftermarketExample {
 		grid-template-areas: 
 			"aftermarketExampleImage aftermarketExampleTitle"
 			"aftermarketExampleImage aftermarketExampleText"
 			"aftermarketExampleImage aftermarketExampleButton"
 	}
-
+	
+	/**Customer and Product Support Scorecard - UX, Marketing**/
 	div.cpsExample {
 		grid-template-areas: 
 			"cpsExampleImage cpsExampleTitle"
@@ -298,6 +642,47 @@ p.experienceExampleButton:hover {
 			"cpsExampleImage cpsExampleButton"
 	}
 	
+	/**Aftermarket Planning Team Video Series - Marketing**/
+	div.aftermarketVideoExample {
+		grid-template-areas: 
+			"aftermarketVideoExampleImage aftermarketVideoExampleTitle"
+			"aftermarketVideoExampleImage aftermarketVideoExampleText"
+			"aftermarketVideoExampleImage aftermarketVideoExampleButton"
+	}
+	
+	/**Dawn Food Training Videos and Modules - Marketing**/
+	div.dawnExample {
+		grid-template-areas: 
+			"dawnExampleImage dawnExampleTitle"
+			"dawnExampleImage dawnExampleText"
+			"dawnExampleImage dawnExampleButton"
+	}
+	
+	/**IASourceLink Checklist - Marketing**/
+	div.checklistExample {
+		grid-template-areas: 
+			"checklistExampleImage checklistExampleTitle"
+			"checklistExampleImage checklistExampleText"
+			"checklistExampleImage checklistExampleButton"
+	}
+	
+	/**SOFIRST Social Media - Marketing**/
+	div.sofirstExample {
+		grid-template-areas: 
+			"sofirstExampleImage sofirstExampleTitle"
+			"sofirstExampleImage sofirstExampleText"
+			"sofirstExampleImage sofirstExampleButton"
+	}
+	
+	/**The Wisdom to Thrive Website - UX, Marketing**/
+	div.wisdomThriveExample {
+		grid-template-areas: 
+			"wisdomThriveExampleImage wisdomThriveExampleTitle"
+			"wisdomThriveExampleImage wisdomThriveExampleText"
+			"wisdomThriveExampleImage wisdomThriveExampleButton"
+	}
+	
+	/**Craig's Class Rhetoric Research - Research**/
 	div.textToImageExample {
 		grid-template-areas: 
 			"textToImageExampleImage textToImageExampleTitle"
@@ -305,11 +690,46 @@ p.experienceExampleButton:hover {
 			"textToImageExampleImage textToImageExampleButton"
 	}
 	
+	/**Qualitative Research Class Project - Research**/
 	div.aiExample {
 		grid-template-areas: 
 			"aiExampleImage aiExampleTitle"
 			"aiExampleImage aiExampleText"
 			"aiExampleImage aiExampleButton"
+	}
+	
+	/**Thesis - Research**/
+	div.thesisExample {
+		grid-template-areas: 
+			"thesisExampleImage thesisExampleTitle"
+			"thesisExampleImage thesisExampleText"
+			"thesisExampleImage thesisExampleButton"
+	}
+	
+	/**Other Examples - Marketing, UX, and Research Buttons**/
+	div.otherExperienceMarketingSubpage {
+		grid-template-columns: 50% 50%;
+		grid-template-areas: 
+			"otherExamplesStatement otherExamplesStatement"
+			"uxExample researchExample"
+	}
+	div.otherExperienceUXSubpage {
+		grid-template-columns: 50% 50%;
+		grid-template-areas: 
+			"otherExamplesStatement otherExamplesStatement"
+			"marketingExample researchExample"
+	}
+	
+	div.otherExperienceResearchSubpage {
+		grid-template-columns: 50% 50%;
+		grid-template-areas: 
+			"otherExamplesStatement otherExamplesStatement"
+			"marketingExample uxExample"
+	}
+	
+	div.uxExampleTwoCol, div.marketingExampleTwoCol, div.researchExampleTwoCol {
+		margin-left: 15%;
+		margin-right: 15%;
 	}
 }
 
@@ -325,7 +745,7 @@ p.experienceExampleButton:hover {
 		align-items: center;
 		grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
 		grid-template-areas: 
-			"distekExampleImage distekExampleImage distekExampleImage distekExampleImage distekExampleImage distekExampleImage distekExampleImage dawnExampleImage dawnExampleImage dawnExampleImage"
+			"distekExampleImage distekExampleImage distekExampleImage distekExampleImage distekExampleImage distekExampleImage distekExampleImage dawnHandoutExampleImage dawnHandoutExampleImage dawnHandoutExampleImage"
 			"PRImage PRImage PRImage PRImage PRImage communicationImage communicationImage communicationImage communicationImage communicationImage"
 	}
 	
@@ -333,7 +753,7 @@ p.experienceExampleButton:hover {
 		width: 85%;
 		padding-bottom: 0.3in;
 	}
-	img.dawnExampleImage {
+	img.dawnHandoutExampleImage {
 		width: 80%;
 		padding-bottom: 0.3in;
 	}
@@ -345,5 +765,11 @@ p.experienceExampleButton:hover {
 	img.communicationImage{
 		width: 80%;
 		padding-bottom: 0.3in;
+	}
+	
+}
+@media screen and (min-width: 1000px){
+	h3.generalExperienceHeading {
+		font-size: 20pt;
 	}
 }

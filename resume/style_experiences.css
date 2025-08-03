@@ -26,6 +26,10 @@ h2.experienceExampleTitle {
 	padding-bottom: 0.1in;
 }
 
+img.experiencePhotoExtraSmall {
+	width: 35%
+}
+
 img.experiencePhoto {
 	width: 50%;
 }
@@ -79,7 +83,7 @@ p.basicsLabelsTools {
 	padding-right: 15%;
 }
 
-img.roboticsClubWebsiteFinal, img.aftermarketFinal {
+img.roboticsClubWebsiteFinal, img.aftermarketFinal, img.sofirstAccount {
 	padding-bottom: 0.2in;
 }
 
@@ -376,6 +380,7 @@ div.APIPhotoColumnsStep2 {
 div.stepNumber3 	{ grid-area: stepNumber3; }
 div.stepTitle3 		{ grid-area: stepTitle3; }
 div.stepContent3 	{ grid-area: stepContent3; }
+div.stepImages3		{ grid-area: stepImages3; }
 
 div.stepCircle3 {
 	grid-area: stepCircle3;
@@ -390,6 +395,7 @@ div.step3 {
 	grid-template-areas: 
 		"stepCircle3 stepTitle3"
 		"stepContent3 stepContent3"
+		"stepImages3 stepImages3"
 }
 
 div.stepNumber4 	{ grid-area: stepNumber4; }
@@ -621,6 +627,37 @@ div.scorecardLink, a.scorecardLink {
 	align-items: center;
 	margin-bottom: 0.2in;
 }
+div.sofirstSocialMediaLink, a.sofirstSocialMediaLink { 
+	grid-area: sofirstSocialMediaLink; 
+	background-color: #A05C68;
+	display: grid;
+	align-items: center;
+	margin-bottom: 0.2in;
+}
+div.iasourcelinkChecklistLink, a.iasourcelinkChecklistLink { 
+	grid-area: iasourcelinkChecklistLink; 
+	background-color: #F29C9F;
+	display: grid;
+	align-items: center;
+	margin-bottom: 0.2in;
+}
+
+div.aftermarketVideosLink, a.aftermarketVideosLink { 
+	grid-area: aftermarketVideosLink; 
+	background-color: #894954;
+	color: #FDF3DD;
+	display: grid;
+	align-items: center;
+	margin-bottom: 0.2in;
+}
+
+div.dawnTrainingLink, a.dawnTrainingLink { 
+	grid-area: dawnTrainingLink; 
+	background-color: #C48B94;
+	display: grid;
+	align-items: center;
+	margin-bottom: 0.2in;
+}
 
 div.navExperienceRoboticsClub {
 	grid-template-columns: 100%;
@@ -650,10 +687,45 @@ div.navExperienceScorecard {
 	grid-template-columns: 100%;
 	grid-template-areas: 
 		"navTitle"
-		"apiLink"
+		"iasourcelinkChecklistLink"
 		"roboticsLink"
-		"aftermarketLink"
+		"dawnTrainingLink"
 }
+div.navExperienceAftermarketVideo, div.navExperienceDawnTraining {
+	grid-template-columns: 100%;
+	grid-template-areas: 
+		"navTitle"
+		"iasourcelinkChecklistLink"
+		"sofirstSocialMediaLink"
+		"roboticsLink"
+}
+div.navExperienceIASourceLinkChecklist {
+	grid-template-columns: 100%;
+	grid-template-areas: 
+		"navTitle"
+		"aftermarketVideosLink"
+		"roboticsLink"
+		"scorecardLink"
+}
+
+div.navExperienceSOFIRSTSocialMedia {
+	grid-template-columns: 100%;
+	grid-template-areas: 
+		"navTitle"
+		"scorecardLink"
+		"iasourcelinkChecklistLink"
+		"aftermarketVideosLink"
+}
+
+div.navExperienceTheWisdomToThriveWebsite {
+		grid-template-columns: 100%;
+		grid-template-areas: 
+			"navTitle"
+			"roboticsLink"
+			"iasourcelinkChecklistLink"
+			"aftermarketVideosLink"
+	}
+
 
 a.ivoryExperienceLink {
 	color: #FDF3DD;
@@ -672,13 +744,138 @@ p.experienceNavBottom {
 	font-family: DMSansSemiBold;
 }
 
+/**SOFIRST Social Media Photos**/
+
+img.socialMediaPhotos, img.socialMediaPhotosSmall {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+img.socialMediaPhotos {
+	width: 55%;
+}
+
+img.socialMediaPhotosSmall {
+	width: 35%;
+}
+
+p.socialMediaHeading {
+	margin-top: 45px;
+	margin-bottom: 0;
+}
+
+div.socialPosts, div.socialPostsOtherA, div.socialPostsOtherB {
+	display: grid;
+	align-items: start;
+	grid-template-columns: 100%;
+}
+
+div.socialPosts1 { 
+	grid-area: socialPosts1;
+
+}
+div.socialPosts2 { 
+	grid-area: socialPosts2;
+
+}
+div.socialPosts3 { 
+	grid-area: socialPosts3; 
+
+}
+div.socialPosts4 { 
+	grid-area: socialPosts4; 
+}
+
+
+div.socialPosts	{
+	grid-area: socialPosts;
+	grid-template-areas: 
+		"socialPosts1"
+		"socialPosts2"
+		"socialPosts3"
+		"socialPosts4"
+}
+
+p.socialMediaDescription {
+	align-content: normal;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+
+div.socialPostsOther1	{ grid-area: socialPostsOther1; }
+div.socialPostsOther2	{ grid-area: socialPostsOther2; }
+div.socialPostsOther3	{ grid-area: socialPostsOther3; }
+div.socialPostsOther4	{ grid-area: socialPostsOther4; }
+div.socialPostsOther5	{ grid-area: socialPostsOther5; }
+div.socialPostsOtherA	{ 
+	grid-area: socialPostsOtherA; 
+	grid-template-areas:
+		"socialPostsOther1"
+		"socialPostsOther2"
+		"socialPostsOther3"
+}
+div.socialPostsOtherB 	{
+	grid-area: socialPostsOtherB;
+	grid-template-areas:
+		"socialPostsOther4"
+		"socialPostsOther5"
+}
+
+/**Aftermarket Planning Videos**/
+div.VideosPhotoColumnsStep3a 	{ grid-area: VideosPhotoColumnsStep3a; }
+div.VideosPhotoColumnsStep3b 	{ grid-area: VideosPhotoColumnsStep3b; }
+
+div.VideosPhotoColumnsStep3 	{ 
+	display: grid;
+	align-items: center;
+	grid-template-columns: 100%;
+	grid-area: VideosPhotoColumnsStep3; 
+	grid-template-areas:
+		"VideosPhotoColumnsStep3a"
+		"VideosPhotoColumnsStep3b"
+}
+
+/**Dawn Training Videos and Modules**/
+p.dawnTrainingHeading {
+	margin-top: 45px;
+}
+
+img.dawnTrainingImages1, img.dawnTrainingImages2 { margin-bottom:0; padding-bottom: 0; }
+img.dawnTrainingImages2, img.dawnTrainingImages3 { margin-top: 0;  padding-top: 0; } 
+
+
+/**IASourceLink Checklist**/
+div.checklistButton {
+	width: 80%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 16pt;
+	font-family: Honeypirls;
+	background-color: #C97A80;
+	border-radius: 0.05in;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+/**The Wisdom to Thrive Website**/
+h2.moreComing {
+	color: #B84C65;
+	padding-bottom: 65px;
+}
+
+
 /**HOOVERING**/
-a.scorecardLink:hover, a.aftermarketLink:hover, a.apiLink:hover, a.roboticsLink:hover {
+a.scorecardLink:hover, a.aftermarketLink:hover, a.apiLink:hover, a.roboticsLink:hover, div.checklistButton:hover, a.iasourcelinkChecklistLink:hover,  a.sofirstSocialMediaLink:hover, a.aftermarketVideosLink:hover, a.dawnTrainingLink:hover{
 	background-color: #962547;
 	color: #FDF3DD;
 }
 
-img.scorecardLinkExperiencesMoreHover, img.scorecardLinkExperiencesImageHover, img.aftermarketLinkExperiencesMoreHover, img.aftermarketLinkExperiencesImageHover,  img.roboticsLinkExperiencesMoreHover, img.roboticsLinkExperiencesImageHover{
+img.scorecardLinkExperiencesMoreHover, img.scorecardLinkExperiencesImageHover, img.aftermarketLinkExperiencesMoreHover, img.aftermarketLinkExperiencesImageHover,  img.roboticsLinkExperiencesMoreHover, img.roboticsLinkExperiencesImageHover, img.iasourcelinkChecklistExperiencesImageHover, img.iasourcelinkChecklistExperiencesMoreHover, img.sofirstSocialMediaExperiencesImageHover, img.sofirstSocialMediaExperiencesMoreHover, img.dawnTrainingLinkExperiencesMoreHover, img.dawnTrainingLinkExperiencesImageHover{
 	display: none;
 }
 
@@ -688,6 +885,7 @@ div.figmaButton:hover {
 	border-color: black;
 	border-width: 0.03in;
 }
+
 
 
 /**RESPONSEIVE DESIGN**/
@@ -706,10 +904,18 @@ div.figmaButton:hover {
 	div.mainSkills1a, div.mainSkills1b, div.mainSkills2a, div.mainSkills2b, div.mainSkills3a, div.mainSkills3b {
 		padding-bottom: 0;
 	}
+	
+	/**IASourceLink Checklist**/
+	div.checklistButton {
+		width: 70%;
+	}
+	
+	
 }
 
 
 @media screen and (min-width: 650px){	
+
 	div.step0 {
 		grid-template-columns: 1.5in auto;
 		grid-template-areas: 
@@ -739,6 +945,7 @@ div.figmaButton:hover {
 		grid-template-areas: 
 			"stepCircle3 stepTitle3"
 			"stepCircle3 stepContent3"
+			"stepImages3 stepImages3"
 	}
 
 	div.step4 {
@@ -777,6 +984,18 @@ div.figmaButton:hover {
 			"stepCircle8 stepTitle8"
 			"stepCircle8 stepContent8"
 			"stepImages8 stepImages8"
+	}
+	
+	/**Aftermarket Videos**/
+	div.VideosPhotoColumnsStep3 {
+		grid-template-columns: 50% 50%;
+		grid-template-areas:
+			"VideosPhotoColumnsStep3a VideosPhotoColumnsStep3b"
+	}
+	
+	/**IASourceLink Checklist**/
+	div.checklistButton {
+		width: 60%;
 	}
 }
 
@@ -899,8 +1118,69 @@ div.figmaButton:hover {
 		grid-template-columns: 33% 33% 33%;
 		grid-template-areas: 
 			"navTitle navTitle navTitle"
-			"apiLink roboticsLink aftermarketLink"
+			"iasourcelinkChecklistLink roboticsLink dawnTrainingLink"
 	}
+	
+	div.navExperienceAftermarketVideo, div.navExperienceDawnTraining {
+		grid-template-columns: 33% 33% 33%;
+		grid-template-areas: 
+			"navTitle navTitle navTitle"
+			"iasourcelinkChecklistLink sofirstSocialMediaLink roboticsLink"
+	}
+	
+	div.navExperienceIASourceLinkChecklist {
+		grid-template-columns: 33% 33% 33%;
+		grid-template-areas: 
+			"navTitle navTitle navTitle"
+			"aftermarketVideosLink roboticsLink scorecardLink"
+	}
+	
+	div.navExperienceSOFIRSTSocialMedia {
+		grid-template-columns: 33% 33% 33%;
+		grid-template-areas: 
+			"navTitle navTitle navTitle"
+			"scorecardLink iasourcelinkChecklistLink aftermarketVideosLink"
+	}
+	
+	div.navExperienceTheWisdomToThriveWebsite {
+		grid-template-columns: 33% 33% 33%;
+		grid-template-areas: 
+			"navTitle navTitle navTitle"
+			"roboticsLink iasourcelinkChecklistLink aftermarketVideosLink"
+	}
+	
+	/**SOFIRST Social Media**/
+	div.socialPosts, div.socialPostsOtherB { 
+		grid-template-columns: 50% 50%;
+	}
+	
+	div.socialPosts	{
+		grid-template-areas: 
+			"socialPosts1 socialPosts2"
+			"socialPosts3 socialPosts4"
+	}
+	
+	div.socialPostsOtherA {
+		grid-template-columns: 33% 34% 33%
+	}
+	
+	div.socialPostsOtherA {
+		grid-template-areas:
+			"socialPostsOther1 socialPostsOther2 socialPostsOther3"
+	}
+	div.socialPostsOtherB {
+		grid-template-areas:
+			"socialPostsOther4 socialPostsOther5"
+	}
+	
+	div.socialPosts1, div.socialPosts3, div.socialPostsOther1, div.socialPostsOther2, div.socialPostsOther4{
+		margin-right: 5%;
+	}
+
+	div.socialPosts2, div.socialPosts4, div.socialPostsOther2, div.socialPostsOther3, div.socialPostsOther5 {
+		margin-left: 5%;
+	}
+	
 }
 
 @media screen and (min-width: 900px) {
@@ -913,6 +1193,11 @@ div.figmaButton:hover {
 	
 	p.experienceButton {
 		margin: 0;
+	}
+	
+	/**IASourceLink Checklist**/
+	div.checklistButton {
+		width: 75%;
 	}
 }
 
@@ -997,6 +1282,7 @@ div.figmaButton:hover {
 		grid-template-areas: 
 			"stepCircle3 stepTitle3"
 			"stepCircle3 stepContent3"
+			"stepCircle3 stepImages3"
 	}
 
 	div.step4 {
@@ -1065,6 +1351,38 @@ div.figmaButton:hover {
 		grid-template-columns: 33% 33% 33%;
 		grid-template-areas: 
 			"navTitle navTitle navTitle"
-			"apiLink roboticsLink aftermarketLink"
+			"iasourcelinkChecklistLink roboticsLink dawnTrainingLink"
+	}
+	div.navExperienceAftermarketVideo, div.navExperienceDawnTraining {
+		grid-template-columns: 33% 33% 33%;
+		grid-template-areas: 
+			"navTitle navTitle navTitle"
+			"iasourcelinkChecklistLink sofirstSocialMediaLink roboticsLink"
+	}
+	
+	div.navExperienceIASourceLinkChecklist {
+		grid-template-columns: 33% 33% 33%;
+		grid-template-areas: 
+			"navTitle navTitle navTitle"
+			"aftermarketVideosLink roboticsLink scorecardLink"
+	}
+	
+	div.navExperienceSOFIRSTSocialMedia {
+		grid-template-columns: 33% 33% 33%;
+		grid-template-areas: 
+			"navTitle navTitle navTitle"
+			"scorecardLink iasourcelinkChecklistLink aftermarketVideosLink"
+	}
+	
+	div.navExperienceTheWisdomToThriveWebsite {
+		grid-template-columns: 33% 33% 33%;
+		grid-template-areas: 
+			"navTitle navTitle navTitle"
+			"roboticsLink iasourcelinkChecklistLink aftermarketVideosLink"
+	}
+	
+	/**IASourceLink Checklist**/
+	div.checklistButton {
+		width: 60%;
 	}
 }

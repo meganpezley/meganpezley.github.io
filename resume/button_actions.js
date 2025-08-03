@@ -41,6 +41,62 @@ function leaveScorecard() {
 	document.getElementById("cpsTraceImageColHover").style.display = "none";
 }
 
+function hoverDawnTraining() {
+	document.getElementById("dawnTrainingMoreCol").style.display = "none";
+	document.getElementById("dawnTrainingMoreColHover").style.display = "inline";
+	document.getElementById("dawnTrainingImageCol").style.display = "none";
+	document.getElementById("dawnTrainingImageColHover").style.display = "block";
+}
+
+function leaveDawnTraining() {
+	document.getElementById("dawnTrainingMoreCol").style.display = "inline";
+	document.getElementById("dawnTrainingMoreColHover").style.display = "none";
+	document.getElementById("dawnTrainingImageCol").style.display = "block";
+	document.getElementById("dawnTrainingImageColHover").style.display = "none";
+}
+
+function hoverIASourceLinkChecklist() {
+	document.getElementById("iasourcelinkChecklistMoreCol").style.display = "none";
+	document.getElementById("iasourcelinkChecklistMoreColHover").style.display = "inline";
+	document.getElementById("iasourcelinkChecklistImageCol").style.display = "none";
+	document.getElementById("iasourcelinkChecklistImageColHover").style.display = "block";
+}
+
+function leaveIASourceLinkChecklist() {
+	document.getElementById("iasourcelinkChecklistMoreCol").style.display = "inline";
+	document.getElementById("iasourcelinkChecklistMoreColHover").style.display = "none";
+	document.getElementById("iasourcelinkChecklistImageCol").style.display = "block";
+	document.getElementById("iasourcelinkChecklistImageColHover").style.display = "none";
+}
+
+function hoverTheWisdomToThrive() {
+	document.getElementById("theWisdomToThriveMoreCol").style.display = "none";
+	document.getElementById("theWisdomToThriveMoreColHover").style.display = "inline";
+	document.getElementById("theWisdomToThriveImageCol").style.display = "none";
+	document.getElementById("theWisdomToThriveImageColHover").style.display = "block";
+}
+
+function leaveTheWisdomToThrive() {
+	document.getElementById("theWisdomToThriveMoreCol").style.display = "inline";
+	document.getElementById("theWisdomToThriveMoreColHover").style.display = "none";
+	document.getElementById("theWisdomToThriveImageCol").style.display = "block";
+	document.getElementById("theWisdomToThriveImageColHover").style.display = "none";
+}
+
+function hoverSofirstSocialMedia() {
+	document.getElementById("sofirstSocialMediaMoreCol").style.display = "none";
+	document.getElementById("sofirstSocialMediaMoreColHover").style.display = "inline";
+	document.getElementById("sofirstSocialMediaImageCol").style.display = "none";
+	document.getElementById("sofirstSocialMediaImageColHover").style.display = "block";
+}
+
+function leaveSofirstSocialMedia() {
+	document.getElementById("sofirstSocialMediaMoreCol").style.display = "inline";
+	document.getElementById("sofirstSocialMediaMoreColHover").style.display = "none";
+	document.getElementById("sofirstSocialMediaImageCol").style.display = "block";
+	document.getElementById("sofirstSocialMediaImageColHover").style.display = "none";
+}
+
 function hoverTextToImageModel() {
 	document.getElementById("textToImageImageCol2").style.display = "none";
 	document.getElementById("textToImageImageColHover2").style.display = "inline";
@@ -53,6 +109,21 @@ function leaveTextToImageModel() {
 	document.getElementById("textToImageImageColHover2").style.display = "none";
 	document.getElementById("textToImageMoreCol2").style.display = "block";
 	document.getElementById("textToImageMoreColHover2").style.display = "none";
+}
+
+function leaveThesis() {
+	document.getElementById("thesisImageCol2").style.display = "inline";
+	document.getElementById("thesisImageColHover2").style.display = "none";
+	document.getElementById("thesisMoreCol2").style.display = "block";
+	document.getElementById("thesisMoreColHover2").style.display = "none";
+}
+
+function hoverThesis() {
+	document.getElementById("thesisMoreCol2").style.display = "none";
+	document.getElementById("thesisMoreColHover2").style.display = "inline";
+	document.getElementById("thesisImageCol2").style.display = "none";
+	document.getElementById("thesisImageColHover2").style.display = "block";
+
 }
 
 function goToScorecard() {
@@ -100,7 +171,51 @@ function leaveRoboticsExperiences() {
 	document.getElementById("roboticsLinkExperiencesMoreHover").style.display = "none";
 	document.getElementById("roboticsLinkExperiencesImage").style.display = "block";
 	document.getElementById("roboticsLinkExperiencesImageHover").style.display = "none";
-} 
+}
+
+function hoverSOFIRSTSocialMediaExperiences() {
+	document.getElementById("sofirstSocialMediaExperiencesMore").style.display = "none";
+	document.getElementById("sofirstSocialMediaExperiencesMoreHover").style.display = "inline";
+	document.getElementById("sofirstSocialMediaExperiencesImage").style.display = "none";
+	document.getElementById("sofirstSocialMediaExperiencesImageHover").style.display = "block";
+}
+
+function leaveSOFIRSTSocialMediaExperiences() {
+	document.getElementById("sofirstSocialMediaExperiencesMore").style.display = "block";
+	document.getElementById("sofirstSocialMediaExperiencesMoreHover").style.display = "none";
+	document.getElementById("sofirstSocialMediaExperiencesImage").style.display = "block";
+	document.getElementById("sofirstSocialMediaExperiencesImageHover").style.display = "none";
+}
+
+function hoverIASourceLinkChecklistExperiences() {
+	document.getElementById("iasourcelinkChecklistExperiencesMore").style.display = "none";
+	document.getElementById("iasourcelinkChecklistExperiencesMoreHover").style.display = "inline";
+	document.getElementById("iasourcelinkChecklistExperiencesImage").style.display = "none";
+	document.getElementById("iasourcelinkChecklistExperiencesImageHover").style.display = "block";
+}
+
+function leaveIASourceLinkChecklistExperiences() {
+	document.getElementById("iasourcelinkChecklistExperiencesMore").style.display = "block";
+	document.getElementById("iasourcelinkChecklistExperiencesMoreHover").style.display = "none";
+	document.getElementById("iasourcelinkChecklistExperiencesImage").style.display = "block";
+	document.getElementById("iasourcelinkChecklistExperiencesImageHover").style.display = "none";
+}
+
+function hoverDawnTrainingExperiences() {
+	document.getElementById("dawnTrainingLinkExperiencesMore").style.display = "none";
+	document.getElementById("dawnTrainingLinkExperiencesMoreHover").style.display = "inline";
+	document.getElementById("dawnTrainingLinkExperiencesImage").style.display = "none";
+	document.getElementById("dawnTrainingLinkExperiencesImageHover").style.display = "block";
+}
+
+function leaveDawnTrainingExperiences() {
+	document.getElementById("dawnTrainingLinkExperiencesMore").style.display = "block";
+	document.getElementById("dawnTrainingLinkExperiencesMoreHover").style.display = "none";
+	document.getElementById("dawnTrainingLinkExperiencesImage").style.display = "block";
+	document.getElementById("dawnTrainingLinkExperiencesImageHover").style.display = "none";
+}
+
+
 
 function hoverEmail() {
 	document.getElementById("emailBlack").style.display = "none";
