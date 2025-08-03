@@ -510,7 +510,7 @@ div.otherExperienceMarketingSubpage {
 	grid-template-columns: 100%;
 	grid-template-areas: 
 		"otherExamplesStatement"
-		"UXExample"
+		"uxExample"
 		"researchExample"
 }
 div.otherExperienceUXSubpage {
